@@ -14,15 +14,15 @@ Comprender algunos aspectos fundamentales de los shaders de iluminación así co
 ## Desarrollo
 
 ### Atajos de teclado
-1. r -> activar / desactivar rotación
-2. espacio -> cambiar shader (6 disponibles)
-  1. Diffuse + specular vertex
-  2. Diffuse + specular pixel
-  3. Pvertex_diffuse
-  4. Ppixel_diffuse
-  5. Pvertex_specular
-  6. Ppixel_specular
-3. flechas -> mover nodo eye en 4 direcciones
+- r -> activar / desactivar rotación
+- espacio -> cambiar shader (6 disponibles)
+  - Diffuse + specular vertex
+  - Diffuse + specular pixel
+  - Pvertex_diffuse
+  - Ppixel_diffuse
+  - Pvertex_specular
+  - Ppixel_specular
+- flechas -> mover nodo eye en 4 direcciones
 
 Se usó la clase OrbitNode de algunod ejemplos de la librería frames para crear nodos interactivos, los cuales permitieran crear una jerarquía de nodos de la siguiente manera:
 
