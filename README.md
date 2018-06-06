@@ -20,4 +20,6 @@ Comprender algunos aspectos fundamentales de los shaders de iluminación así co
 
 Se usó la clase OrbitNode de algunod ejemplos de la librería frames para crear nodos interactivos, los cuales permitieran crear una jerarquía de nodos de la siguiente manera:
 
-![Image of nodes](https://octodex.github.com/images/yaktocat.png)
+![Image of nodes](https://raw.githubusercontent.com/anfmorenoso/shadersFi/master/data/nodes.png)
+
+De ésta manera poder observar e interactuar con los elementos de la escena, resaltando sus diferencias con cada shader.
