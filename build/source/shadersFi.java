@@ -40,7 +40,6 @@ public void setup(){
   ppixel_diffuse = loadShader("diffuse_ppixel_frag.glsl", "diffuse_ppixel_vert.glsl");
   pvertex_specular = loadShader("specular_pvertex_frag.glsl", "specular_pvertex_vert.glsl");
   ppixel_specular = loadShader("specular_ppixel_frag.glsl", "specular_ppixel_vert.glsl");
-  normal_mapping_shader = loadShader("normal_mapping_frag.glsl", "normal_mapping_vert.glsl");
 
   
   graph = new Scene(this);
@@ -130,6 +129,9 @@ public void draw()
     case 5:
       shader(ppixel_specular);
       break;
+    case 6:
+      shader(pvertex_specular);
+      break;
   }
 
   pointLight(255, 255, 255, node1.position().x(), node1.position().y(), node1.position().z());
@@ -176,7 +178,7 @@ public void drawCylinder( int sides, float r, float h)
 
 public void keyPressed() {
   if(key == ' '){
-    if( vertIndex <= 5 ){
+    if( vertIndex < 6 ){
       vertIndex += 1;
     }
     else {

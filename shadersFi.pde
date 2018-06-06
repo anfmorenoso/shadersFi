@@ -19,7 +19,6 @@ void setup(){
   ppixel_diffuse = loadShader("diffuse_ppixel_frag.glsl", "diffuse_ppixel_vert.glsl");
   pvertex_specular = loadShader("specular_pvertex_frag.glsl", "specular_pvertex_vert.glsl");
   ppixel_specular = loadShader("specular_ppixel_frag.glsl", "specular_ppixel_vert.glsl");
-  normal_mapping_shader = loadShader("normal_mapping_frag.glsl", "normal_mapping_vert.glsl");
 
   size(700, 700, P3D);
   graph = new Scene(this);
@@ -155,7 +154,7 @@ void drawCylinder( int sides, float r, float h)
 
 void keyPressed() {
   if(key == ' '){
-    if( vertIndex <= 5 ){
+    if( vertIndex < 5 ){
       vertIndex += 1;
     }
     else {
